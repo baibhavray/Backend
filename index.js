@@ -333,38 +333,6 @@ mongo.connect("mongodb://localhost:27017/mern", function (err, server) {
   }
 });
 
-// //Insert() method (Adding users directly from here)
-// mongo.connect("mongodb://localhost:27017/mern",function(err, server){
-//     if(err) {
-//         console.log("connection error "+err);
-//     }else{
-//         app.post("/add_users_manually", (req, res) => {
-//             server.db().collection("users").insertOne({name: "Sarat", contact: 167890, email : "Sarat@gmail.com", gender: "M" });
-//         })
-//     }
-// })
-// //Insert() (adding users from postman)
-// mongo.connect("mongodb://localhost:27017/mern",function(err, server){
-//     if(err) {
-//         console.log("connection error "+err);
-//     }else{
-//         app.post("/add_users_dynamically", (req, res) => {
-//             server.db().collection("users").insertOne({name: req.body.name , contact: req.body.contact, email : req.body.email, gender: req.body.gender });
-//         })
-//     }
-// })
-
-// //deleting users
-// mongo.connect("mongodb://localhost:27017/mern",function(err, server){
-//     if(err) {
-//         console.log("connection error "+err);
-//     }else{
-//         app.post("/del_users_dynamically", (req, res) => {
-//             server.db().collection("users").deleteMany([{"email" : "akash11@gmail.com"}, {"email" : "xyz11@gmail.com"}]);
-//         })
-//     }
-// })
-
 // Updating users
 mongo.connect("mongodb://localhost:27017/mern", function (err, server) {
   if (err) {
